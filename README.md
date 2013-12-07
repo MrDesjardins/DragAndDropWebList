@@ -3,3 +3,5 @@ This is a MVC website that show you how to use a custom template to be able to s
 
 
 
+
+![alt text](https://github.com/MrDesjardins/DragAndDropWebList/blob/master/MultiChoice.gif "Demo")
