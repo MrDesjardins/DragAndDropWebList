@@ -4,4 +4,4 @@ This is a MVC website that show you how to use a custom template to be able to s
 
 
 
-![Animated gif that demonstrate the user control](https://raw.github.com/MrDesjardins/DragAndDropWebList/master/MultiChoice.gif"Demo")
+![Animated gif that demonstrate the user control](https://raw.github.com/MrDesjardins/DragAndDropWebList/master/MultiChoice.gif "Demo")
