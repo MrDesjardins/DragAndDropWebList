@@ -12,12 +12,12 @@ namespace DragAndDropWebList.Models
     {
         public Person()
         {
-            this.Attitudes = new MultiSelectorWithSingleValueExtended<Guid, string>();
+            this.Attitudes = new MultiSelectorWithSingleValueExtended();
         }
         public Guid Id { get; set; }
         public string Name { get; set; }
 
-        [UIHint("GuidMultiSelectorExtended")]
-        public MultiSelectorWithSingleValueExtended<Guid, string> Attitudes { get; set; } 
+        [UIHint("MultiSelectorExtended")]
+        public MultiSelectorWithSingleValueExtended Attitudes { get; set; } 
     }
 }

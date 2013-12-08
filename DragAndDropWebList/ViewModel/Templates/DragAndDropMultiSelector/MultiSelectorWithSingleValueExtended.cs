@@ -2,16 +2,17 @@ using System.Collections.Generic;
 
 namespace DragAndDropWebList.ViewModel.Templates.DragAndDropMultiSelector
 {
-    public class MultiSelectorWithSingleValueExtended<TSelectorType, TExtendedPropertyType> 
+
+    public class MultiSelectorWithSingleValueExtended
     {
         public MultiSelectorWithSingleValueExtended()
         {
-            SelectedItems = new List<MultiSelectorWithSingleValueExtendedItem<TSelectorType, TExtendedPropertyType>>();
-            AvailableItems = new List<MultiSelectorWithSingleValueExtendedItem<TSelectorType, TExtendedPropertyType>>();
+            SelectedItems = new List<MultiSelectorWithSingleValueExtendedItem>();
+            AvailableItems = new List<MultiSelectorWithSingleValueExtendedItem>();
         }
 
-        public List<MultiSelectorWithSingleValueExtendedItem<TSelectorType, TExtendedPropertyType>> SelectedItems { get; set; }
-        public List<MultiSelectorWithSingleValueExtendedItem<TSelectorType, TExtendedPropertyType>> AvailableItems { get; set; }
+        public List<MultiSelectorWithSingleValueExtendedItem> SelectedItems { get; set; }
+        public List<MultiSelectorWithSingleValueExtendedItem> AvailableItems { get; set; }
 
 
     }

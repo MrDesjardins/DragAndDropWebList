@@ -1,15 +1,16 @@
 namespace DragAndDropWebList.ViewModel.Templates.DragAndDropMultiSelector
 {
-    public class MultiSelectorWithSingleValueExtendedItem<TUniqueIdentifierType, TExtendedValueType> : ISelectorAvailableItemViewModel<TUniqueIdentifierType, TExtendedValueType>
+    public class MultiSelectorWithSingleValueExtendedItem
     {
 
         #region Implementation of ISelectorAvailableItemViewModel<T>
 
-        public TUniqueIdentifierType ID { get; set; }
+        public string ID { get; set; }
         public string Description { get; set; }
-        public TExtendedValueType ExtendedProperty { get; set; }
+        public string ExtendedProperty { get; set; }
 
         #endregion
 
     }
+
 }

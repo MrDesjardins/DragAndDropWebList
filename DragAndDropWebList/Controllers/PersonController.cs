@@ -23,11 +23,11 @@ namespace DragAndDropWebList.Controllers
         public ActionResult Create()
         {
             var person = new Person();
-            person.Attitudes.AvailableItems = new List<MultiSelectorWithSingleValueExtendedItem<Guid, string>>{
+            person.Attitudes.AvailableItems = new List<MultiSelectorWithSingleValueExtendedItem>{
             
-            new MultiSelectorWithSingleValueExtendedItem<Guid, string>{ID = Guid.NewGuid(),Description = "Choice #1", ExtendedProperty = "Property1"}
-            ,new MultiSelectorWithSingleValueExtendedItem<Guid, string>{ID = Guid.NewGuid(),Description = "Choice #2", ExtendedProperty = "Property2"}
-            ,new MultiSelectorWithSingleValueExtendedItem<Guid, string>{ID = Guid.NewGuid(),Description = "Choice #3", ExtendedProperty = "Property3"}
+            new MultiSelectorWithSingleValueExtendedItem{ID = Guid.NewGuid().ToString(),Description = "Choice #1", ExtendedProperty = "Property1"}
+            ,new MultiSelectorWithSingleValueExtendedItem{ID = Guid.NewGuid().ToString(),Description = "Choice #2", ExtendedProperty = "Property2"}
+            ,new MultiSelectorWithSingleValueExtendedItem{ID = Guid.NewGuid().ToString(),Description = "Choice #3", ExtendedProperty = "Property3"}
             };
             return View(person);
         }
