@@ -122,9 +122,9 @@
     </Compile>
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModel\Templates\ISelectorAvailableItemViewModel.cs" />
-    <Compile Include="ViewModel\Templates\MultiSelectorWithSingleValueExtended.cs" />
-    <Compile Include="ViewModel\Templates\MultiSelectorWithSingleValueExtendedItem.cs" />
+    <Compile Include="ViewModel\Templates\DragAndDropMultiSelector\ISelectorAvailableItemViewModel.cs" />
+    <Compile Include="ViewModel\Templates\DragAndDropMultiSelector\MultiSelectorWithSingleValueExtended.cs" />
+    <Compile Include="ViewModel\Templates\DragAndDropMultiSelector\MultiSelectorWithSingleValueExtendedItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -202,6 +202,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="DragAndDropMutltiSelectorList.nuspec" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />

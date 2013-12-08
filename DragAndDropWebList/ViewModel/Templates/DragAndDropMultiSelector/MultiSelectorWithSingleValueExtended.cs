@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DragAndDropWebList.ViewModel.Templates
+namespace DragAndDropWebList.ViewModel.Templates.DragAndDropMultiSelector
 {
     public class MultiSelectorWithSingleValueExtended<TSelectorType, TExtendedPropertyType> 
     {

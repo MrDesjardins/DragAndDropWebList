@@ -1,4 +1,4 @@
-namespace DragAndDropWebList.ViewModel.Templates
+namespace DragAndDropWebList.ViewModel.Templates.DragAndDropMultiSelector
 {
     public class MultiSelectorWithSingleValueExtendedItem<TUniqueIdentifierType, TExtendedValueType> : ISelectorAvailableItemViewModel<TUniqueIdentifierType, TExtendedValueType>
     {

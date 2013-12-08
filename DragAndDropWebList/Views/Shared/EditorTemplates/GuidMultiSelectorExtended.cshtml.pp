@@ -1,4 +1,4 @@
-﻿@model DragAndDropWebList.ViewModel.Templates.MultiSelectorWithSingleValueExtended<Guid, string>
+﻿@model $rootnamespace$.ViewModel.Templates.DragAndDropMultiSelector.MultiSelectorWithSingleValueExtended<Guid, string>
 
 @{
     var controlPropertyName = ViewData.TemplateInfo.HtmlFieldPrefix.Replace('.', '_');

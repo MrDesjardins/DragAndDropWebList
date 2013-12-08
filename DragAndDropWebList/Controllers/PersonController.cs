@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using DragAndDropWebList.Models;
 using DragAndDropWebList.ViewModel.Templates;
+using DragAndDropWebList.ViewModel.Templates.DragAndDropMultiSelector;
 
 namespace DragAndDropWebList.Controllers
 {
