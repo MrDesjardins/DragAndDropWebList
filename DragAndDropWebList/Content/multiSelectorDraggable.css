@@ -90,3 +90,24 @@ span.gridMultiSelector-message-information
     opacity: 0.6;
     margin-left: 10px;
 }
+
+div.gridMultiSelector-header-left h4 
+{
+    float:left;
+}
+
+div.gridMultiSelector-header-left img
+{
+    float:right;
+    margin-right:5px;
+}
+
+div.gridMultiSelector-header-right h4
+{
+    float:right;
+}
+
+div.gridMultiSelector-header-right img
+{
+        margin-left:5px;
+}

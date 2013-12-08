@@ -133,4 +133,15 @@ function transfertMultiSelectorList(listFrom, listTo) {
 
 $(document).ready(function () {
     attachConnectedSortable(this);
+    /*Transfert every item from one list to the other*/
+    $('.allavailableButton, .allselectedButton').click(function () {
+        transfertMultiSelectorList($(this).closest('.gridMultiSelector-choice-single'),
+            $($(this).closest('.gridMultiSelector-choice-single').siblings()[0])
+        );
+        return false;
+    });
+
+    $('.gridMultiSelector-choice').find('li').each(function () {
+        callExtendedSortableFunctionOnItemChanged($(this));
+    });
 });

@@ -52,14 +52,17 @@
     <div id="@controlPropertyName" class="gridMultiSelector-choice" data-onitemcreate-functionname="@javascriptFunctionNameOnItemCreate">
         <div class="gridMultiSelector-container-choice">
             <div class="gridMultiSelector-choice-single allselected">
-                <h4>Selected</h4>
-                @if (isAllButtonsActivated)
-                {
-                    <img src="@Url.Content("~/Content/Images/arrowAllRight.png")" 
-                         class="allselectedButton" 
-                         alt="Tranfert to the right" 
-                         title="Transfer to the right"/>
-                }
+                <div class="gridMultiSelector-header-left">
+                    <h4>Selected</h4>
+                    @if (isAllButtonsActivated)
+                    {
+                        <img src="@Url.Content("~/Content/Images/arrowAllRight.png")"
+                             class="allselectedButton"
+                             alt="Tranfert to the right"
+                             title="Transfer to the right" />
+                    }
+                    <div style="clear:both"></div>
+                </div>
                 <ul class="guid-multi-selector-selected connectedSortable" data-property-name="@controlSelectedItemsPropertyName">
                     @if (Model != null && Model.SelectedItems != null && Model.SelectedItems.Any())
                     {
@@ -75,17 +78,16 @@
                 </ul>
             </div>
             <div class="gridMultiSelector-choice-single allavailable">
-                @{ var styleh4 = ""; }
-                @if (isAllButtonsActivated)
-                {
-                    <img src="@Url.Content("~/Content/Images/arrowAllLeft.png")"
-                         class="allavailableButton"
-                         alt="Transfert to the left"
-                         title="Transfert to the left" />
-                    styleh4 = "float:right;";
-                }
-                <h4 style="@styleh4">Available</h4>
- 
+                <div class ="gridMultiSelector-header-right">
+                    @if (isAllButtonsActivated)
+                    {
+                        <img src="@Url.Content("~/Content/Images/arrowAllLeft.png")"
+                             class="allavailableButton"
+                             alt="Transfert to the left"
+                             title="Transfert to the left" />
+                    }
+                    <h4>Available</h4>
+                </div>
                 <ul class="guid-multi-selector-available connectedSortable" data-property-name="@controlAvailableItemsPropertyName">
                     @if (Model != null && Model.AvailableItems != null && Model.AvailableItems.Any())
                     {
