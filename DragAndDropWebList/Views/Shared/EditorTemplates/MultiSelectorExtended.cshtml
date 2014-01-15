@@ -46,9 +46,6 @@
         @inlineSelectedItem
     </div>
 
-    @Html.Raw("</div><div class=\"dtr-field\">")
-
-
     <div id="@controlPropertyName" class="gridMultiSelector-choice" data-onitemcreate-functionname="@javascriptFunctionNameOnItemCreate">
         <div class="gridMultiSelector-container-choice">
             <div class="gridMultiSelector-choice-single allselected">
